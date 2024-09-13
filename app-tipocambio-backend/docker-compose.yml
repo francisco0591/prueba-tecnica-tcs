@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  app:
+    image: 'docker-spring-boot:latest'
+    build:
+      context: .
+    container_name: app
+    restart: on-failure
+    ports:
+      - 3000:8090      
+  
